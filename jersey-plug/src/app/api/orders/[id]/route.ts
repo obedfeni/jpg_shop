@@ -12,6 +12,7 @@ export async function PATCH(
   }
 
   const { id: rawId } = await params;
+
   if (!rawId || rawId === 'null' || rawId === 'undefined') {
     return NextResponse.json({ error: 'Invalid order ID' }, { status: 400 });
   }
