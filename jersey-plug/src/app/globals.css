@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #F0F7FF;
+  color: #0F172A;
+  min-height: 100vh;
+}
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+img { transition: opacity 0.3s ease; }
+
+::selection { background: #BFDBFE; color: #1E3A8A; }
+
+:focus-visible { outline: 2px solid #1D4ED8; outline-offset: 2px; }

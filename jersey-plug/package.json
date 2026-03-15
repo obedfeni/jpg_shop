@@ -1,0 +1,37 @@
+{
+  "name": "jersey-plug-gh",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.2.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "framer-motion": "^11.3.28",
+    "lucide-react": "^0.414.0",
+    "google-auth-library": "^9.13.0",
+    "google-spreadsheet": "^4.1.4",
+    "cloudinary": "^2.4.0",
+    "jose": "^5.6.3",
+    "zod": "^3.23.8",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.4.0",
+    "@tanstack/react-query": "^5.51.23",
+    "axios": "^1.7.3",
+    "react-hot-toast": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.14",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.9",
+    "typescript": "^5.5.4"
+  }
+}
