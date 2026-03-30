@@ -6,6 +6,7 @@ import { ProductGrid } from '@/components/product/ProductGrid';
 import { CartDrawer } from '@/components/cart/CartDrawer';
 import { COLORS, BUSINESS } from '@/lib/constants';
 import { useProducts } from '@/hooks/index';
+import { useRecordVisit } from '@/hooks/useAnalytics';
 import type { Product } from '@/types';
 
 export default function ShopPage() {
@@ -13,6 +14,9 @@ export default function ShopPage() {
   const [cartOpen, setCartOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState('All');
+
+  // Record visit automatically when shop page loads
+  useRecordVisit();
 
   const { data, isLoading, error, refetch } = useProducts();
   const allProducts = data?.data ?? [];
